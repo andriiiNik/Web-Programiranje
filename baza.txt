@@ -1,0 +1,27 @@
+INSERT INTO [ButiciDB].[dbo].[Grad] (
+    [Naziv]
+)
+  
+VALUES
+('Kruševac');
+
+INSERT INTO [ButiciDBase].[dbo].[Butik] (
+    [Naziv],
+    [Kontakt telefon]
+)
+VALUES
+('Zara',065-698-33-34);
+
+INSERT INTO [ButiciDB].[dbo].[Artikal] (
+      [Brend],
+      [Model],
+      [Cena]
+)
+VALUES
+('Nike','Patike Nike Air Max Bolt',10699);
+
+SELECT TOP (1000) [ID]
+      ,[Adresa]
+      ,[ButikID]
+      ,[GradID]
+  FROM [ButiciDBase].[dbo].[SpojAdresa]
